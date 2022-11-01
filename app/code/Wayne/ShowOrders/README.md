@@ -18,3 +18,11 @@
 - Para aplicar a imagem no formulário copie a pasta `img` em `view/frontend/img` e cole em `pub/media`
 - Aplique atualizações de banco de dados executando `bin/magento setup:upgrade`
 - Limpe os caches executando `sudo rm -rf generated/code/* pub/static/frontend/* var/cache/* var/page_cache/* var/view_preprocessed/* && bin/magento cache:flush`
+
+### Instrução
+
+- Para acessar o formulário acesse a URL `<my-localhost-domain>/formapi`
+
+### Resultado Esperado
+
+![myimage](./images/cms-page.jpeg)
