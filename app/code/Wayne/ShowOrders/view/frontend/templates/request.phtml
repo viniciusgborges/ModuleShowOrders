@@ -1,0 +1,17 @@
+<div id="show-orders" data-bind="scope:'get-orders'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+
+    <script type="text/x-magento-init">
+        {
+            "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "get-orders": {
+                        "component": "Wayne_ShowOrders/js/view/getorders"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</div>

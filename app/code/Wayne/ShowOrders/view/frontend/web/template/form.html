@@ -1,0 +1,42 @@
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="pub/media/img/form_image.svg">
+        </div>
+        <div class="box_form">
+            <div class="title">
+                <h1>Busca de pedidos:</h1>
+            </div>
+            <div id="form">
+                <div class="custom_email">
+                    <label for="custom_email">Email</label><br>
+                    <input type="email" name="custom_email" placeholder="Digite seu email" id="customer_email" required/>
+                </div>
+                <div class="send-button">
+                    <button data-bind="click: getOrder" class="btn-sub"><a>Enviar</a></button>
+                </div>
+            </div>
+            <div class="scrollingTable">
+                <table onload="makeTableScroll();" id="users_data" class="orders-table">
+                    <thead>
+                    <tr>
+                        <th id="table_email">Email</th>
+                        <th id="table_first_name">Primeiro Nome</th>
+                        <th id="table_grand_total">Valor</th>
+                    </tr>
+                    </thead>
+                    <tbody data-bind="foreach: dataOrder()">
+                    <tr>
+                        <td id="customer_email_value" data-bind="text: customer_email"></td>
+                        <td id="customer_firstname_value" data-bind="text: customer_firstname"></td>
+                        <td id="grand_total_value" data-bind="text: grand_total"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+

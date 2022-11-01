@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.box_form .orders-table {
+  margin-top: 15px;
+  align-content: center;
+  align-items: center;
+  display: table;
+  background: cornsilk;
+  border-radius: 10px;
+  width:  100%;
+  border-collapse: collapse;
+}
+
+.scrollingTable {
+  width: 30em;
+  overflow-y: auto;
+}
+
+.box_form .orders-table #customer_email_value {
+  align-items: center;
+  align-content: center;
+}
+
+.page-footer {
+  display: none;
+}
+
+.page-header {
+  display: none;
+}
+
+.header .content {
+  display: none;
+}
+
+.breadcrumbs {
+  display: none;
+}
+
+.page-wrapper {
+  padding-top: 70px;
+  background: #0c0ce94d;
+}
+
+.sections.nav-sections {
+  display: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background: #0c0ce94d;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.form-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fde3a7d7;
+  padding: 1rem;
+}
+
+.form-image img {
+  width: 31rem;
+}
+
+.container .box_form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 3rem;
+}
+
+.form {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.send-button {
+  display: flex;
+  align-items: center;
+
+}
+
+.send-button button {
+  border: none;
+  background-color: #6c63ff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button button:hover {
+  background-color: #6b63fff1;
+}
+
+.send-button button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+.box_form #form .custom_email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.box_form #form .custom_email input {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+
+.box_form #form .custom_email input:hover {
+  background-color: #eeeeee75;
+}
+
+.box_form #form .custom_email input:focus-visible {
+  outline: 1px solid #6c63ff;
+}
+
+.box_form #form .custom_email label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.box_form #form {
+  margin-top: -29px;
+}
+
+.box_form #form .custom_email input::placeholder {
+  color: #000000be;
+}
+
+@media screen and (max-width: 1330px) {
+  .form-image {
+    display: none;
+  }
+  .container {
+    width: 50%;
+  }
+  .container .box_form {
+    width: 100%;
+  }
+  .box_form .scrollingTable {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+  .box_form #form .custom_email {
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    max-height: 10rem;
+    padding-right: 5rem;
+  }
+  .box_form .scrollingTable {
+    flex-wrap: nowrap;
+  }
+}
