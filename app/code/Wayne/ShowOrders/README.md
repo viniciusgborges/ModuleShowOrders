@@ -13,7 +13,7 @@
 
 ### Instalação
 
-- Descompactar o arquivo zip em `app/code/Wayne`
+- Descompactar o arquivo zip ou fazer o git clone de forma que fique em `app/code/Wayne/ShowOrders/...`
 - Habilite o módulo executando `bin/magento module:enable Wayne_ShowOrders`
 - Para aplicar a imagem no formulário copie a pasta `img` em `view/frontend/img` e cole em `pub/media`
 - Aplique atualizações de banco de dados executando `bin/magento setup:upgrade`
